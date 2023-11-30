@@ -5,8 +5,8 @@ import Statistics from "./_components/Statistics"
  const Home = () => {
   return (
     <div className=" px-11 py-12 ">
-      <div className="flex px-20 justify-center items-center">
-        <div className="space-y-4">
+      <div className="flex px-20 justify-center items-start">
+        <div className="space-y-4 pt-4">
          <div className="text-7xl text-fontPrimary font-bold">
          Empowering Global 
          <p className="mt-5">
