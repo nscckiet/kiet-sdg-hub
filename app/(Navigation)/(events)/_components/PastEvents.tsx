@@ -1,31 +1,10 @@
-import Heading from "./Heading"
-import bg from "@/public/upcoming.svg"
-import EventCard from "./EventCard"
-import { StaticImageData } from "next/image"
+import Heading from "../../../_components/Heading"
 
-type ConstantType={
-    name:String,
-    image:StaticImageData
-}[]
-
-const constant:ConstantType = [
-    {
-        name:"Event Name",
-        image:bg
-    },
-    {
-        name:"Event Name",
-        image:bg
-    },
-    {
-        name:"Event Name",
-        image:bg
-    }
-]
-
+import EventCard from "../../../_components/EventCard"
+import {eventData} from "../../../../constants/constant"
 
 const PastEvents = () => {
-    const displayUpcomingEventCards= constant.map((item,i)=>{
+    const displayUpcomingEventCards= eventData.map((item,i)=>{
         return (
             <div key={i}>
             <EventCard  name={item.name}  image={item.image}/>

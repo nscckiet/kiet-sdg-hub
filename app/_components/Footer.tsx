@@ -20,14 +20,13 @@ const Footer = () => {
             </div>
             <div className="flex justify-start flex-col w-28  h-24 ">
                 <p className="text-base font-normal mb-1">About Us</p>
-                <Link href={"#"}>Objective</Link>
-                <Link href={"#"}>Our Team</Link>
-                <Link href={"#"}>Disclaimer</Link>
+                <Link href={"/about/#objective"}>Objective</Link>
+                <Link href={"/about/#team"}>Our Team</Link>
             </div>
             <div className="flex justify-start flex-col w-28  h-24 ">
                 <p className="text-base font-normal mb-1">Others</p>
-                <Link href={"#"}>Privacy Policy</Link>
-                <Link href={"#"}>Upcoming Events</Link>
+                <Link href={"/extras/#privacyPolicy"}>Privacy Policy</Link>
+                <Link href={"/extras/#disclaimer"}>Disclaimer</Link>
             </div>
         </div>
     </div>

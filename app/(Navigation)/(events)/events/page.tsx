@@ -1,5 +1,4 @@
 import UpcomingEvent from "../_components/UpcomingEvent";
-import Heading from "../_components/Heading";
 import PastEvents from "../_components/PastEvents";
 const EventsPage = () => {
   return (

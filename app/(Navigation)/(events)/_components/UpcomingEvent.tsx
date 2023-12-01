@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Heading from "./Heading"
+import Heading from "../../../_components/Heading"
 const UpcomingEvent = () => {
   return (
     <div id="upcomingEvents" >
