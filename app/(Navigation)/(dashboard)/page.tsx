@@ -6,12 +6,12 @@ import Statistics from "./_components/Statistics"
   return (
     <div className=" px-11 py-12 ">
       <div className="flex px-20 justify-center items-start">
-        <div className="space-y-4 pt-4">
+        <div className="pt-4">
          <div className="text-7xl text-fontPrimary font-bold leading-[100px]">
          Empowering Global Change
          </div>
-         <p className=" text-3xl text-fontMutedColor">Let’s make change together</p>
-         <Button variant={"primary"} size={"primary"} className=" text-2xl  ">Explore SDGs</Button>
+         <p className=" text-3xl text-fontMutedColor my-5">Let’s make change together</p>
+         <Button variant={"primary"} size={"primary"} className=" text-2xl mt-4 ">Explore SDGs</Button>
         </div>
         <Image src={"./dashboard-graphic.svg"} width={500} height={500} alt="dashboard-graphic" className="w-auto h-auto"/>
       </div>
@@ -21,7 +21,6 @@ import Statistics from "./_components/Statistics"
       <div className=" mt-52">
  <Statistics/>
       </div>
-      <div></div>
       </div>
   )
 }

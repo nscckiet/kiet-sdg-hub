@@ -1,6 +1,8 @@
 "use client"
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import {Menu} from "lucide-react";
+
 import Link from "next/link";
 import {
   DropdownMenu,
@@ -13,7 +15,7 @@ const Navbar = () => {
     const path  = usePathname();
 
   return (
-    <div className="flex  lg:px-28 md:px-16 px-8 py-3  items-center justify-between  shadow ">
+    <div className="flex  lg:px-28 md:px-12 px-8 py-3  items-center justify-between  shadow ">
       <div className="flex  justify-center items-center ">
         <Image src={"./kiet-logo.svg"} width={45} height={45} className=" w-auto h-auto" alt="kiet-logo" />
         <div className="h-[30px] mx-1 w-[1px] bg-[#9F9F9F] "></div>
@@ -28,8 +30,10 @@ const Navbar = () => {
       </div>
       {/* Mobile Navigation */}
       <div className="sm:hidden">
-        <DropdownMenu >
-          <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenu>
+          <DropdownMenuTrigger >  
+            <Menu size={40}/>
+          </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>
               <Link href={"/"}>Home</Link>
