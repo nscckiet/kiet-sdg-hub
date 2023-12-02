@@ -8,7 +8,7 @@ const OngoingEvents = () => {
         </div>
         <div className="flex flex-col gap-5">
             <p className="text-fontSecondary font-semibold text-3xl ">Ongoing Event</p>
-            <p className="leading-7 text-fontMutedColor">Join us for an insightful Info Session for GDSC KIET 2023! We're excited to have our previous GDSC leads, Aakash Goel and Mayank Shakya, as guest speakers. Aakash Goel, the founder of GDSC KIET, and Mayank Shakya, GDSC lead 2020 will share their valuable experiences and insights. Don't miss out on this opportunity to learn from the best in the field. Register now to secure your spot and gain valuable knowledge about the world of technology and development. See you there!</p>
+            <p className="leading-7 text-fontMutedColor">Join us for an insightful Info Session for GDSC KIET 2023! We{`'`}re excited to have our previous GDSC leads, Aakash Goel and Mayank Shakya, as guest speakers. Aakash Goel, the founder of GDSC KIET, and Mayank Shakya, GDSC lead 2020 will share their valuable experiences and insights. Don{`'`}t miss out on this opportunity to learn from the best in the field. Register now to secure your spot and gain valuable knowledge about the world of technology and development. See you there!</p>
         </div>
     </div>
   )
