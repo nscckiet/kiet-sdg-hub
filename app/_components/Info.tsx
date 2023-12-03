@@ -8,13 +8,13 @@ interface InfoDirection extends InfoType{
 
 const Info = ({info , image ,direction}:InfoDirection) => {
   return (
-    <div className={`flex ${direction==="ltr" ? "flex-row-reverse": "" } justify-between mt-12  max-h-[280px] `}>
-    <p className=" text-fontMutedColor max-w-[630px] leading-[40px] text-[28px] ">{
+    <div className={`flex ${direction==="ltr" ? "md:flex-row-reverse flex-col-reverse": "flex-col-reverse md:flex-row" } justify-between mt-12`}>
+    <p className=" text-fontMutedColor max-w-[630px]   xl:leading-[40px] lg:leading-[30px] xl:text-[28px] lg:text-[20px] md:text-[16px] text-base ">{
         info
     }</p>
-    <Image src={image} width={450} height={200} className="w-auto h-auto "  alt="about-image"/>
+    <Image src={image} width={450} height={200}  className="xl:w-auto xl:h-auto lg:w-[300px] lg:h-[200px] md:w-[200px] md:h-[150px]  w-[170px] h-[150px]"  alt="about-image"/>
   </div>
   )
 }
 
-export default Info
+export default Info  

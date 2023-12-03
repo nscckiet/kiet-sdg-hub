@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 const EventsPage = () => {
   return (
-    <div className=" py-20 flex flex-col justify-center items-center">
+    <div className="lg:py-20 md:py-10 py-8 flex flex-col justify-center items-center">
       <UpcomingEvent/>
-      <div className="mt-[200px]">
+      <div className="lg:mt-[200px] md:mt-[140px] mt-[80px]">
         <div className=" mb-24">
       <PastEvents/>
         </div>

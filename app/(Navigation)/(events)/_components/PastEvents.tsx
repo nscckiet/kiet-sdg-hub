@@ -13,10 +13,10 @@ const PastEvents = () => {
     })
   return (
     <div  id="pastEvents" className="flex flex-col justify-center items-center">
-        <div className=" mb-20"> 
+        <div className=" lg:mb-[80px] md:mb-[40px] mb-[10px] "> 
         <Heading heading="Past Events"/>
         </div>
-        <div className=" grid grid-cols-3 gap-24 "> 
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-22 xl:gap-24  gap-20"> 
         {displayUpcomingEventCards}
         </div>  
     </div>

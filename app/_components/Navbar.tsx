@@ -1,7 +1,7 @@
 "use client"
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import {Menu} from "lucide-react";
+import {Menu,X} from "lucide-react";
 
 import Link from "next/link";
 import {
@@ -10,17 +10,25 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useState } from "react";
 
 const Navbar = () => {
     const path  = usePathname();
+    const [isOpen , setIsOpen] = useState(true);
+    const handleToggle=()=>{
+      setIsOpen((prev)=>!prev);
+    }
+    console.log(isOpen)
 
   return (
     <div className="flex  lg:px-28 md:px-12 px-8 py-3  items-center justify-between  shadow ">
+        <Link href={"/"}>
       <div className="flex  justify-center items-center ">
         <Image src={"./kiet-logo.svg"} width={45} height={45} className=" w-auto h-auto" alt="kiet-logo" />
         <div className="h-[30px] mx-1 w-[1px] bg-[#9F9F9F] "></div>
         <Image src={"./sdg-logo.svg"} width={45} height={45} className="w-auto  h-auto" alt="sdg-logo" />
       </div>
+        </Link>
       {/* Desktop Navigation */}
       <div className="lg:gap-32 md:gap-12 gap-8  lg:text-base md:text-sm text-sm sm:flex hidden text-fontMutedColor">
         <Link href={"/"} className={path==='/' ? "text-fontPrimary" : ""}>Home</Link>
@@ -31,8 +39,12 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div className="sm:hidden">
         <DropdownMenu>
-          <DropdownMenuTrigger >  
-            <Menu size={40}/>
+          <DropdownMenuTrigger  >  
+  {
+    isOpen ?
+    <Menu size={40}/> : <X size={40}/>
+  }
+  
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>

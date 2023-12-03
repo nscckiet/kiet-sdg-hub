@@ -7,9 +7,9 @@ type params = {
 
 const EventCard = ({name, image}:params) => {
   return (
-    <div  className="flex flex-col pt-[236px] drop-shadow-xl shadow-md  rounded-3xl w-[335px] h-[457px]" >
+    <div  className=" cursor-pointer flex flex-col pt-[236px] drop-shadow-xl shadow-md  rounded-3xl lg:w-[280px] xl:w-[335px] md:w-[280px]  w-[280px] lg:h-[457px] h-[400px]" >
     <Image src={image} fill alt="image" />
-    <div className="bg-white absolute z-10 w-full rounded-3xl border border-fontMutedColor p-9 font-medium text-2xl h-[221px] ">{name}</div>
+    <div className="bg-white absolute z-10 w-full rounded-3xl border border-fontMutedColor p-9 font-medium lg:text-2xl text-xl h-[221px] ">{name}</div>
     </div>
   )
 }

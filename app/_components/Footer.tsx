@@ -2,28 +2,28 @@ import Image from "next/image"
 import Link from "next/link"
 const Footer = () => {
   return (
-    <div className="flex items-start justify-between bg-fontSecondary px-28 py-10 text-white">
+    <div className="flex flex-col md:flex-row md:items-start justify-between bg-fontSecondary lg:px-28 md:px-24 sm:px-20 px-10 py-10 text-white">
         <div className="flex  items-start gap-3">
           <Image src={"./sdg-logo-whitebg.svg"} alt="sdg-logo" width={36} height={36} className="w-auto h-auto mt-1"/>
           <div>
             <p className=" font-medium">Sustainable Developments Goals </p>
-            <p className=" text-xs font-light">KIET SDG Hub</p>
+            <p className=" text-xs font-light mt-1">KIET SDG Hub</p>
             <p className="text-xs  font-extralight mt-2">Established on 30/05/2022</p>
           </div>
         </div>
-        <div className="flex gap-24 justify-center items-center font-extralight text-xs">
-            <div className="flex justify-start flex-col w-28  h-24 ">
+        <div className="grid mt-4 md:ml-0 md:mt-0  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-24 md:gap-7 gap-4 justify-center items-center font-extralight text-xs">
+            <div className="flex justify-start flex-col md:h-24">
                 <p className="text-base font-normal mb-1">Quick Links</p>
                 <Link href={"#"}>The 17 SDGs</Link>
                 <Link href={"/events/#pastEvents"}>Past Events</Link>
                 <Link href={"/events/#upcomingEvents"}>Upcoming Events</Link>
             </div>
-            <div className="flex justify-start flex-col w-28  h-24 ">
+            <div className="flex justify-start flex-col md:h-24">
                 <p className="text-base font-normal mb-1">About Us</p>
                 <Link href={"/about/#objective"}>Objective</Link>
                 <Link href={"/about/#team"}>Our Team</Link>
             </div>
-            <div className="flex justify-start flex-col w-28  h-24 ">
+            <div className="flex justify-start flex-col md:h-24">
                 <p className="text-base font-normal mb-1">Others</p>
                 <Link href={"/extras/#privacyPolicy"}>Privacy Policy</Link>
                 <Link href={"/extras/#disclaimer"}>Disclaimer</Link>

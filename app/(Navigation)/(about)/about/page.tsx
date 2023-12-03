@@ -19,21 +19,21 @@ const AboutUsPage = () => {
     )
 })
   return (
-    <div className="flex flex-col px-[124px] py-20">
+    <div className="flex flex-col lg:px-[124px] md:px-[100px] sm:px-[30px] px-[20px] lg:py-20 md:py-10 py-8 ">
       <div>
-    <p  className=" text-5xl font-medium text-fontMutedColor ">About SDG</p>
-    <p className=" text-5xl font-semibold  text-fontPrimary mt-4">Empowering Progress, Embracing Unity</p>
+    <p  className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-medium text-fontMutedColor ">About SDG</p>
+    <p className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold text-fontPrimary lg:mt-4 mt-2">Empowering Progress, Embracing Unity</p>
     <Info info={aboutDescription.info} image={aboutDescription.image} direction="rtl"/>
       </div>
-    <div id="objective" className="flex flex-col items-center mt-20">
+    <div id="objective" className="flex flex-col items-center lg:mt-20 mt-10">
     <Heading heading="Our Objective"/>
     </div>
-    <div className="mt-4">
+    <div className="lg:mt-4">
     <Info info={objectiveDescription.info} image={objectiveDescription.image} direction="ltr"/>
     </div>
-    <div id="team" className=" mt-52">
-      <p className=" text-5xl font-semibold text-fontPrimary  mb-24">Our Team</p>
-      <div className="grid grid-cols-3 gap-24">{displayTeamNameCards}</div>
+    <div id="team" className= "lg:mt-52">
+      <p className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold text-fontPrimary lg:mb-24 mb-10 md:mb-16 mt-12 md:mt-0">Our Team</p>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-22 xl:gap-24 gap-20  mb-24">{displayTeamNameCards}</div>
     </div>
     </div>
   )

@@ -17,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/sdg-logo-whitebg.svg" sizes="any" />
       <body className={`${poppins.className} flex min-h-screen flex-col`}>
       <Navbar/>
         {children}
