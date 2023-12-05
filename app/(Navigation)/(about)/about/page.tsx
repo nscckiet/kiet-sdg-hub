@@ -19,7 +19,7 @@ const AboutUsPage = () => {
     )
 })
   return (
-    <div className="flex flex-col lg:px-[124px] md:px-[72px] sm:px-[40px] px-[20px] lg:py-20 md:py-10 py-8 ">
+    <div className="flex flex-col lg:px-[124px] md:px-[72px] sm:px-[40px] px-[32px] lg:py-20 md:py-10 py-8 ">
       <div>
     <p  className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-medium text-fontMutedColor ">About SDG</p>
     <p className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold text-fontPrimary lg:mt-4 mt-2">Empowering Progress, Embracing Unity</p>

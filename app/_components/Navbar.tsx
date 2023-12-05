@@ -37,7 +37,7 @@ const Navbar = () => {
         <Link href={"/about"} className={path==='/about' ? "text-fontPrimary" : ""}>About Us</Link>
       </div>
       {/* Mobile Navigation */}
-      <div className="sm:hidden">
+      <div className="sm:hidden ">
         <DropdownMenu>
           <DropdownMenuTrigger  >  
   {

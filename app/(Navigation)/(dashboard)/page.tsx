@@ -5,7 +5,7 @@ import Statistics from "./_components/Statistics";
 const Home = () => {
   return (
     <div className=" xl:px-11 lg:px-8 md:px-6 sm:px-4 px-[20px] lg:py-12 md:py-10 py-8  flex flex-col ">
-      <div className="flex lg:px-20 md:px-12 sm:px-6 px-0 justify-center items-start">
+      <div className="flex lg:px-20 md:px-12 sm:px-6 px-3 justify-center items-start">
         <div className="xl:pt-4 md:pt-3 sm:pt-2">
           <div className="xl:text-7xl lg:text-6xl md:text-5xl text-4xl text-fontPrimary font-bold  xl:leading-[100px] lg:leading-[70px] md:leading-[60px] leading-[40px]">
             Empowering Global Change

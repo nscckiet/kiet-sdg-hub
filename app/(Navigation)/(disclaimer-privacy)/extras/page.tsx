@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="flex flex-col lg:px-[124px] md:px-[72px] sm:px-[40px] px-[20px] lg:py-20 md:py-10 py-8 ">
+    <div className="flex flex-col lg:px-[124px] md:px-[72px] sm:px-[40px] px-[32px] lg:py-20 md:py-10 py-8 ">
         <div id="disclaimer"  className=" flex justify-center ">
             <Heading>Disclaimer</Heading>
         </div>
