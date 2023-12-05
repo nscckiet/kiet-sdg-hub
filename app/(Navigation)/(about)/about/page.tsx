@@ -19,21 +19,21 @@ const AboutUsPage = () => {
     )
 })
   return (
-    <div className="flex flex-col lg:px-[124px] md:px-[100px] sm:px-[30px] px-[20px] lg:py-20 md:py-10 py-8 ">
+    <div className="flex flex-col lg:px-[124px] md:px-[72px] sm:px-[40px] px-[20px] lg:py-20 md:py-10 py-8 ">
       <div>
     <p  className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-medium text-fontMutedColor ">About SDG</p>
     <p className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold text-fontPrimary lg:mt-4 mt-2">Empowering Progress, Embracing Unity</p>
-    <Info info={aboutDescription.info} image={aboutDescription.image} direction="rtl"/>
+    <Info info={aboutDescription.info} image={aboutDescription.image}  direction="rtl"/>
       </div>
     <div id="objective" className="flex flex-col items-center lg:mt-20 mt-10">
-    <Heading heading="Our Objective"/>
+    <Heading>Our Objective</Heading>
     </div>
     <div className="lg:mt-4">
     <Info info={objectiveDescription.info} image={objectiveDescription.image} direction="ltr"/>
     </div>
-    <div id="team" className= "lg:mt-52">
-      <p className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold text-fontPrimary lg:mb-24 mb-10 md:mb-16 mt-12 md:mt-0">Our Team</p>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-22 xl:gap-24 gap-20  mb-24">{displayTeamNameCards}</div>
+    <div id="team" className= "xl:mt-52 lg:mt-36 md:mt-28 mt-12 flex flex-col justify-center items-center ">
+      <p className=" xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold text-fontPrimary xl:mb-24 lg:mb-12 md:mb-6     mb-3 xl:mt-12 self-start">Our Team</p>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-16 xl:gap-24 gap-20 md:gap-y-10  mb-24">{displayTeamNameCards}</div>
     </div>
     </div>
   )

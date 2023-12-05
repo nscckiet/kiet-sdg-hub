@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
         </Link>
       {/* Desktop Navigation */}
-      <div className="lg:gap-32 md:gap-12 gap-8  lg:text-base md:text-sm text-sm sm:flex hidden text-fontMutedColor">
+      <div className="xl:gap-32 lg:gap-16 md:gap-12 gap-8  lg:text-base md:text-sm text-sm sm:flex hidden text-fontMutedColor">
         <Link href={"/"} className={path==='/' ? "text-fontPrimary" : ""}>Home</Link>
         <Link href={"/events"} className={path==='/events' ? "text-fontPrimary" : ""}>Events</Link>
         <Link href={"/activities"} className={path==='/activities' ? "text-fontPrimary" : ""}>Activities</Link>
