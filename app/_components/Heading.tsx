@@ -1,9 +1,11 @@
+import { cn } from "@/lib/utils"
 import { ReactNode } from "react"
-const Heading = ({children}:{
+const Heading = ({children,className}:{
 children:ReactNode
+className?:String
 }) => {
   return (
-    <div className="inline-block ">
+    <div className={`${cn(className)}  inline-block `}>
         <p className=" text-fontPrimary text-2xl lg:text-4xl md:text-3xl font-medium  border-fontSecondary">
           {children}
         </p>

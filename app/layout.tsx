@@ -20,6 +20,7 @@ export default function RootLayout({
       <link rel="icon" href="/sdg-logo-whitebg.svg" sizes="any" />
       <body className={`${poppins.className} flex min-h-screen flex-col`}>
       <Navbar/>
+      <div className=' lg:py-8 py-10'></div>
         {children}
       <Footer/>
         </body>

@@ -10,18 +10,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useState } from "react";
-
 const Navbar = () => {
     const path  = usePathname();
-    const [isOpen , setIsOpen] = useState(true);
-    const handleToggle=()=>{
-      setIsOpen((prev)=>!prev);
-    }
-    console.log(isOpen)
+   
+   
+  
 
   return (
-    <div className="flex  lg:px-28 md:px-12 px-8 py-3  items-center justify-between  shadow ">
+    <div className="flex fixed top-0 left-0 z-20 bg-white w-full lg:px-28 md:px-12 px-8 py-3  items-center justify-between shadow ">
         <Link href={"/"}>
       <div className="flex  justify-center items-center ">
         <Image src={"./kiet-logo.svg"} width={45} height={45} className=" w-auto h-auto" alt="kiet-logo" />
@@ -39,12 +35,8 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div className="sm:hidden ">
         <DropdownMenu>
-          <DropdownMenuTrigger  >  
-  {
-    isOpen ?
-    <Menu size={40}/> : <X size={40}/>
-  }
-  
+          <DropdownMenuTrigger  >    
+    <Menu size={40}/>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>
